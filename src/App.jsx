@@ -7,14 +7,14 @@ import { Header } from "./Header";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/yasulol">
       <div className="min-h-screen">
         <Header />
         <img
           src={PandaLoLBackground}
           id="WebsiteBG"
           className="fixed scale-[215%] top-[140px] opacity-75"
-        ></img>
+        />
         <Routes>
           <Route path="/search/:riotGameName/:riotTagLine" element={<SearchResults />} />
           <Route path="/" element={<Home />} />
